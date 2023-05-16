@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:rgb(32,33,36);
+    --color2:rgb(48,49,52);
+    --font1: rgb(240,240,240);
+
+
+}
+
+
+html, body{
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color1);
+    color: var(--font1)
+}
+
+
+header{
+    height:max-content;
+    padding: 1rem;
+    text-align: right;
+    
+}
+
+a{
+    margin: auto 0.5rem;
+    color: var(--font1);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+div{
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    margin: 1rem;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#p-sub{
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+img{
+    margin:0;
+    margin-bottom: -40px;
+}
+
+form{
+    display: inline-block;
+    width: min(90%,500px);
+    text-align: center;
+}
+
+#form-grid{
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    text-align: left;
+    gap: 0.3rem;
+}
+
+.search{
+    height: 2.8rem;
+    font-size: 17px;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    color: var(--font1);
+    background-color: var(--color1);
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.search:hover{
+    background-color: var(--color2);
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgb(15, 15, 15);
+
+}
+
+.search:focus{
+    outline: none !important
+}
+
+input{
+    margin: 0 5px;
+    padding: 0.5rem;
+    font-size: 15px;
+    color: var(--font1);
+    background-color: var(--color2);
+    border:1px solid var(--color1);
+    border-radius: 5px;
+
+}
+
+input:hover{
+    border: 1px solid grey;
+
+}
+
+input:focus{
+    outline: none !important;
+    border: 1px solid lightskyblue;
+
+}
+
+#a-search{
+    margin-left:48%;
+    width: 50%;
+    font-size: min(1, 16px);
+    grid-column: 2;
+    background-color: rgb(66, 164, 225);
+    color:var(--color1);
+}
+
+#a-search:hover{
+    background-color: lightskyblue;
+}
+
+
+@media not screen and (min-width: 550px) {
+
+    form{
+        height:30%;
+    }
+
+    p{
+        margin:0;
+    }
+
+    #p-sub{
+        margin:0;
+    }
+
+    input{
+        margin:0
+    }
+    
+
+    #form-grid {
+      margin-top:120px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: right;
+    }
+
+    #a-search{
+        margin:0;
+        min-width: 200px;
+    }
+  }
+
